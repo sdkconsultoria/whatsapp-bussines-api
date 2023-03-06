@@ -1,0 +1,48 @@
+{
+    "name": "sdkconsultoria/whatsapp-bussines-api",
+    "type": "library",
+    "description": "Mensageria con whatsapp, administración de plantillas y cuentas de waba",
+    "version": "1.0",
+    "keywords": [
+        "laravel",
+        "package",
+        "whatsapp cloud api",
+        "whatsapp",
+        "waba"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Camilo Antonio Rodríguez Cruz",
+            "email": "camilo@sdkconsultoria.com",
+            "homepage": "https://sdkconsultoria.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0",
+        "laravel/pint": "^1.6",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "autoload": {
+        "files": [],
+        "psr-4": {
+            "Sdkconsultoria\\WhatsappBussinessApi\\": "src/",
+            "Sdkconsultoria\\WhatsappBussinessApi\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sdkconsultoria\\WhatsappBussinessApi\\ServiceProvider"
+            ],
+            "aliases": {
+                "WhatsappBussinessApi": "Sdkconsultoria\\WhatsappBussinessApi\\Facade"
+            }
+        }
+    },
+    "prefer-stable": true
+}
